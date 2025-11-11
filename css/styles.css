@@ -1,11 +1,11 @@
 :root{
-    --hover-color: #009e6c;
+    --hover-color: #00af78;
     --border-color:#74747441;
     --background-second-color:#1B273B;
     --background-inputs:#273449 ;
     --hover-clear:#ff000083;
+    --title-color:#00ffc8;
 }
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -36,7 +36,7 @@ body{
 }
 /*Hero*/
 .hero__title{
-    color: #00e5ff;
+    color: var(--title-color);
     font-size: 30px;
 }
 .hero{
@@ -71,7 +71,7 @@ body{
     text-align: left;
 }
 .calculator__header-title{
-    color: #00e5ff;
+    color: var(--title-color);
     width: 100%;
     font-size: 2.5rem;
 }
@@ -243,4 +243,42 @@ body{
 }
 .card__displayAnswer::-webkit-scrollbar{
     height: 3px;
+}
+/*footer*/
+.footer{
+    font-size: 1.9rem;
+    background-color: var(--background-second-color);
+    margin-top: 1.9rem;
+    padding: 0 1.5rem;
+    min-height: 70px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: var(--border-color) 1px solid;
+}
+.footer__contact-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer__link{
+    text-decoration: none;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.footer__link:hover{
+    color: var(--hover-color);
+}
+.footer__mail{
+    color: var(--title-color);
+    transition: color .2s;
+}
+.footer__mail:hover{
+    color: #ff008c;
+}
+.footer__icon{
+    width: 30px;
 }

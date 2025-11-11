@@ -58,7 +58,7 @@ Calculadora web que convierte números entre diferentes sistemas numéricos: bin
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/conversor-numerico.git
+git clone https://github.com/JuanEstebanIG/Conversor-de-Sistemas-Numericos.git
 
 # Entrar al directorio
 cd conversor-numerico

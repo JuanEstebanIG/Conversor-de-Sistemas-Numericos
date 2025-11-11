@@ -10,10 +10,10 @@ export function convert(num, base) {
 export function validate(num, base) {
     num = num.trim().toLowerCase();
     const regex = {
-        2: /^[10]+$/,
-        8: /^[0-7]+$/,
-        10: /^[0-9]+$/,
-        16: /^[0-9a-f]+$/,
+        2: /^-?[10]+$/,
+        8: /^-?[0-7]+$/,
+        10: /^-?[0-9]+$/,
+        16: /^-?[0-9a-f]+$/,
     };
     return regex[base].test(num);
 };

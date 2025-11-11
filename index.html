@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.webp" type="image/x-icon">
+    <meta name="description" content="Calculadora de bases numéricas que convierte entre binario, octal, decimal y hexadecimal de forma rápida y precisa">
+    <meta property ="og:title" content="Conversor de sistemas numéricos">
+    <meta property ="og:description" content="Calculadora de bases numéricas que convierte entre binario, octal, decimal y hexadecimal de forma rápida y precisa">
+    <meta property ="og:image" content="./assets/favicon.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Conversor de sistemas numéricos">
+    <meta name="twitter:description" content="Convierte entre binario, octal, decimal y hexadecimal con facilidad.">
+    <meta name="twitter:image" content="./assets/favicon.webp">
+    <title>Conversor de sistemas numéricos</title>
+</head>
+<body>
+    <main class="main">
+        <section class="hero">
+            <h1 class="hero__title"> Conversor de sistemas numéricos</h1>
+            <p class="hero__paragraph">Convierte números en sistemas binario, hexadecimal, octal o decimal.</p>
+        </section>
+
+        <form class="calculator" id="calculator">
+
+            <div class="calculator__header">
+                <img src="./assets/calculator.svg" alt="icono de calculadora" class="icon">  
+                <h2 class="calculator__header-title">Número de entrada</h2>
+                <p class="calculator__header-paragraph">Ingresa el número y seleciona el tipo de entrada</p>
+            </div>
+            
+            <div class="calculator__container-input">
+                <label for="inputEntry" class="calculator__form-label">Número</label>
+                <input type="text" id="inputEntry" autocomplete="off" required placeholder="Ej: 123456789" class="calculator__input">
+            </div>
+
+            <div class="calculator__container-options">
+                <label for="options" class="calculator__form-label">Sistema</label>
+                <select name="sistema" id="options" class="calculator__select">
+                    <option value="Decimal">Decimal</option>
+                    <option value="Octal">Octal</option>
+                    <option value="Binario">Binario</option>
+                    <option value="Hexadecimal">Hexadecimal</option>
+                </select>
+            </div>
+
+            <div class="calculator__container-buttons">
+                <button type="submit" id="convert" aria-label="Pasar numero a otros sistemas" class="calculator__button-convert">
+                    <img src="./assets/calculator.svg" alt="icono de calculadora" class="icon">
+                Convertir 
+                </button>
+                <button type="submit" id="clear" aria-label="Borrar todo" class="calculator__button-clear">
+                    <img src="./assets/trash.svg" alt="icono de papelera" class="icon">
+                Limpiar
+                </button>
+            </div>
+
+            <span class="err" role="alert" id="err"></span>
+
+        </form>
+
+        <section class="answer" id="answer">
+
+            <article class="card">
+                <h3 class="card__title">Binario</h3>
+                <span class="card__base">Base 2</span>
+                <span class="card__displayAnswer" id="outputBi">-</span>
+                <button id="Bin" aria-label="Copiar número en base binaria" class="card__button">
+                    <img src="./assets/copy.svg" alt="icon copy" class="icon card__icon">
+                </button>
+            </article>
+
+            <article class="card">
+                <h3 class="card__title">Octal</h3>
+                <span class="card__base">Base 8</span>
+                <span class="card__displayAnswer" id="outputOct">-</span>
+                <button id="Oct" aria-label="Copiar número en base octal" class="card__button">
+                    <img src="./assets/copy.svg" alt="icon copy" class="icon card__icon">
+                </button>
+            </article>
+            <article class="card">
+                <h3 class="card__title">Hexadecimal</h3>
+                <span class="card__base">Base 16</span>
+                <span class="card__displayAnswer" id="outputHexa">-</span>
+                <button id="Hexa" aria-label="copiar número en base hexadecimal" class="card__button">
+                    <img src="./assets/copy.svg" alt="icon copy" class="icon card__icon">
+                </button>
+            </article>
+            <article class="card">
+                <h3 class="card__title">Decimal</h3>
+                <span class="card__base" >Base 10</span>
+                <span class="card__displayAnswer" id="outputDeci">-</span>
+                <button id="Dec" aria-label="Copiar número en base decimal" class="card__button">
+                    <img src="./assets/copy.svg" alt="icon copy" class="icon card__icon">
+                </button>
+            </article>
+        </section>
+        
+    </main>
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>
+

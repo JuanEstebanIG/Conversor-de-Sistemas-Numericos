@@ -179,10 +179,11 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 1.5rem;
 }
 .card{
-    width: 49%;
+    width: 90%;
+    max-width: 500px;
     border-radius: 10px;
     height: 150px;
     min-width: 250px;
@@ -249,7 +250,7 @@ body{
     font-size: 1.9rem;
     background-color: var(--background-second-color);
     margin-top: 1.9rem;
-    padding: 0 1.5rem;
+    padding: .5rem 1.5rem;
     min-height: 70px;
     height: auto;
     display: flex;
@@ -260,6 +261,7 @@ body{
 .footer__contact-list{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
 }
